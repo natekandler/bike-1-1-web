@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150603002400) do
+ActiveRecord::Schema.define(version: 20150603003138) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,14 @@ ActiveRecord::Schema.define(version: 20150603002400) do
   add_index "events", ["requester_id"], name: "index_events_on_requester_id", using: :btree
   add_index "events", ["responder_id"], name: "index_events_on_responder_id", using: :btree
 
+  create_table "store_profiles", force: true do |t|
+    t.string   "street_address"
+    t.integer  "zip"
+    t.integer  "help_radius"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.datetime "created_at",                                 null: false
     t.datetime "updated_at",                                 null: false
@@ -37,8 +45,6 @@ ActiveRecord::Schema.define(version: 20150603002400) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "phone"
-    t.string   "street_address"
-    t.string   "zip"
     t.string   "encrypted_password", limit: 128,             null: false
     t.string   "confirmation_token", limit: 128
     t.string   "remember_token",     limit: 128,             null: false

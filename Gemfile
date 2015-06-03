@@ -22,14 +22,22 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'spring',        group: :development
+group :development, :test do
+  gem 'byebug'
+  gem 'rspec-rails', '~> 3.2.1'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
+  gem "spring-commands-rspec"
 
-# Use unicorn as the app server
-# gem 'unicorn'
+  gem 'web-console', '~> 2.0'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+  gem 'spring'
+end
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
+group :test do
+  gem 'factory_girl_rails', '~> 4.5.0'
+  gem "json_spec"
+  gem "database_cleaner"
+end
