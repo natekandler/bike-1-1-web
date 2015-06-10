@@ -9,10 +9,6 @@
   }
 }
 
-.content{
-  padding-top: $top-nav-height;
-}
-
 .row { @include row() }
 
 .col-1 { @include span-columns(1); }
