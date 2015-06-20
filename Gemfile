@@ -22,6 +22,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+#server
+gem 'unicorn', '~> 4.9.0'
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.2.1'
