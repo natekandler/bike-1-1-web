@@ -4,7 +4,7 @@ FactoryGirl.define do
     last_name "simpson"
     sequence(:email) { |n| "email#{n}@test.org"}
     password "password"
-    role "user"
+    role "rider"
 
     factory :admin do
       role "admin"

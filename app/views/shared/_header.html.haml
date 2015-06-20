@@ -1,0 +1,15 @@
+.nav-bar
+  .logo-wrapper
+    = link_to root_path do
+      = image_tag "logo.png"
+  %ul
+    %li
+      - if signed_in?
+        = link_to t(".sign_out"), sign_out_path, method: :delete, class: "btn white-border"
+      - else
+        = link_to t("sign_in"), sign_in_path, class: "btn white-border"
+
+#flash
+  - flash.each do |key, value|
+    %div{id: "flash_#{key}"}
+      = value
