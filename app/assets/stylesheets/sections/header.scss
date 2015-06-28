@@ -8,7 +8,7 @@
     padding: 0 10px;
   }
 
-  ul{
+  .user-nav{
     margin-top: 20px;
     padding: 5px 10px;
     float: right;
@@ -16,7 +16,27 @@
     @include clearfix();
     li{
       float: left;
+      i{
+        margin-right: 5px;
+      }
     }
+  }
+  .nav-dropdown{
+    display: none;
+    list-style: none; 
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    margin: 5px 0 0 50px;
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+    li{
+      float: none;
+      margin: 5px 0;
+    }
+
   }
   .logo-wrapper{
     float: left;
@@ -25,5 +45,9 @@
     img {
       width: 50px;
     }
+  }
+  .sign-in{
+    float: right;
+    margin-top: 25px;
   }
 }

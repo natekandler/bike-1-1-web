@@ -6,6 +6,12 @@
   text-decoration: none;
   border: none;
   border-radius: 5px;
+  &.no-radius{
+    border-radius: 0;
+  }
+  &.no-background{
+    background: none;
+  }
   &.white-border{
     border: 1px solid #fff;
     background: none;

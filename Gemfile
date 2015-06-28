@@ -12,6 +12,9 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'bourbon'
 gem 'neat'
 
+#icons
+gem 'font-awesome-rails', '~> 4.3.0.0'
+
 #autentication
 gem 'clearance', '~> 1.10.1'
 gem 'cancancan', '~> 1.10.1'
