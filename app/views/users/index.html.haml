@@ -4,4 +4,22 @@
       .col-12
         .main-title-wrapper
           %h1
-            Bike-1-1
+            %a.tooltip#about-us-btn{href: "#", title: "click me to find out more!"}
+              Bike-1-1
+
+= render 'shared/about_us'
+:javascript
+  $(document).ready(function(){
+    $("#about-us-btn").on('click', function(event){
+      event.preventDefault();
+      vex.open({
+        className: 'vex-theme-plain',
+        content: "",
+        contentClassName: 'about-us-modal',
+        afterOpen: function($vexcontent){
+          $(".about-us-modal").append($('.about-us').html())
+        }
+      }); 
+    })
+  
+  });

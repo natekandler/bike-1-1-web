@@ -1,13 +1,21 @@
 @import "base/normalize";
+
+//vendor
 @import "bourbon";
 @import "neat";
 @import "font-awesome";
+@import "vex/vex";
+@import "vex/vex-theme-plain";
+@import "tooltipster/tooltipster";
 
 //base
 @import "base/variables";
 @import "base/layout";
 @import "base/buttons";
 @import "base/forms";
+
+//modules
+@import "modules/tooltipster";
 
 //sections
 @import "sections/users";
