@@ -1,4 +1,23 @@
 .inner
-  .content
-    %h1
-      Show
+  .row
+    .col-12
+      %h1
+        Profile
+  .row
+    .col-12
+      #map-canvas
+
+:javascript
+  function initializeMap() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(41.930619, -87.713654),
+      zoom: 8
+    }
+    var map = new google.maps.Map(mapCanvas);
+    console.warn(map);
+    console.warn(mapOptions)
+  }
+
+  google.maps.event.addDomListener(window, 'load', initializeMap);
+

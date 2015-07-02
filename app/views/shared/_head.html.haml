@@ -4,9 +4,10 @@
   %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1" } 
   %title= "Bike One One"
 
-
   = stylesheet_link_tag 'application'
   = javascript_include_tag 'application'
+
+  %script{ type:"text/javascript", src:"http://maps.googleapis.com/maps/api/js?libraries=places,drawing&sensor=false" }
 
   = csrf_meta_tags
 
