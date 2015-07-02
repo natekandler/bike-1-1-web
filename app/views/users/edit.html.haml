@@ -9,7 +9,6 @@
             = render 'edit_form', {f: f}
             -if @user.responder?
               = render 'responder_profile_edit', {f: f}
-          .row
             .actions
               .form-control.text-field
                 = f.submit "Submit", class: "btn btn-dark-aqua btn-width"
