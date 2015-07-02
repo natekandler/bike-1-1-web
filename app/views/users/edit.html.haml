@@ -2,7 +2,15 @@
   .content
     %h1
       Edit
-    .form_wrapper
-      = form_for @user do |f|
-        = render 'edit_form', {f: f}
+    .row
+      .col-12
+        .form_wrapper
+          = form_for @user do |f|
+            = render 'edit_form', {f: f}
+            -if @user.responder?
+              = render 'responder_profile_edit', {f: f}
+          .row
+            .actions
+              .form-control.text-field
+                = f.submit "Submit", class: "btn btn-dark-aqua btn-width"
 

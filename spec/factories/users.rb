@@ -6,6 +6,10 @@ FactoryGirl.define do
     password "password"
     role "rider"
 
+    factory :responder do
+      role "responder"
+    end
+
     factory :admin do
       role "admin"
     end

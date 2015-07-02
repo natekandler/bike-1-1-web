@@ -6,6 +6,18 @@ include Clearance::User
 
   enum role: [ :rider, :responder, :admin ]
 
+  def rider?
+    self.role == "rider"
+  end
+
+  def responder?
+    self.role == "responder"
+  end
+
+  def admin?
+    self.role == "admin"
+  end
+
   def full_name
     "#{first_name} #{last_name}"
   end

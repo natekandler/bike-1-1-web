@@ -5,12 +5,17 @@ RSpec.describe User, :type => :model do
   context "Roles" do
     it "should have a role of user" do
       user = FactoryGirl.create(:user)
-      expect(user.role).to eq "rider"
+      expect(user.rider?).to eq true
     end
 
     it "should have a role of admin" do
       user = FactoryGirl.create(:admin)
-      expect(user.role).to eq "admin"
+      expect(user.admin?).to eq true
+    end
+
+    it "should have a role of store" do
+      user = FactoryGirl.create(:responder)
+      expect(user.responder?).to eq true
     end
   end
 
