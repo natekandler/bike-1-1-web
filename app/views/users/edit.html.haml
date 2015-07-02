@@ -2,4 +2,7 @@
   .content
     %h1
       Edit
+    .form_wrapper
+      = form_for @user do |f|
+        = render 'edit_form', {f: f}
 

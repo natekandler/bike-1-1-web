@@ -1,3 +1,8 @@
+form{
+  .actions{
+    margin-top: 10px;
+  }
+}
 .form-control{
   label{
     display: block;
@@ -7,5 +12,8 @@
     margin-bottom: 5px;
     padding: 5px;
     width: 100%;
+  }
+  .btn-width{
+    width: 70px;
   }
 }
