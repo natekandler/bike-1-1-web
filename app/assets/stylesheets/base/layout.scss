@@ -1,5 +1,6 @@
 .inner {
   padding-top: $top-nav-height;
+  padding-bottom: 40px;
   @include outer-container;
   min-width: 940px;
   max-width: 1160px;

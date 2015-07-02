@@ -5,19 +5,23 @@
         Profile
   .row
     .col-12
-      #map-canvas
+      .map-wrapper
+        #map-canvas
 
 :javascript
+  
   function initializeMap() {
     var mapCanvas = document.getElementById('map-canvas');
     var mapOptions = {
       center: new google.maps.LatLng(41.930619, -87.713654),
-      zoom: 8
+      zoom: 12
     }
-    var map = new google.maps.Map(mapCanvas);
+    var map = new google.maps.Map(mapCanvas, mapOptions);
     console.warn(map);
     console.warn(mapOptions)
   }
 
-  google.maps.event.addDomListener(window, 'load', initializeMap);
+  $(window).load(function(){
+    initializeMap();
+  });
 
