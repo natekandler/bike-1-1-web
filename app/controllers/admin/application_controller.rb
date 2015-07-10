@@ -6,7 +6,7 @@ class Admin::ApplicationController < ActionController::Base
   layout 'admin/layouts/admin'
 
   def permitted_roles!
-    if current_user && current_user.admin
+    if current_user && current_user.admin?
      return true
     else
       redirect_to root_url
