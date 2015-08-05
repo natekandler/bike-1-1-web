@@ -15,4 +15,9 @@
 //= require tooltipster/jquery.tooltipster.js
 //= require vex/vex
 //= require vex/vex.dialog
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/bike_one_one
 //= require_tree .

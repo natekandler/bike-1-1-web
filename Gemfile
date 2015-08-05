@@ -11,6 +11,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'haml-rails', '~> 0.9.0'
 gem 'bourbon'
 gem 'neat'
+gem 'active_model_serializers', '~> 0.9.3'
+gem 'react-rails', '~> 1.0'
+gem 'rails-backbone', '~> 1.2.0'
 
 #icons
 gem 'font-awesome-rails', '~> 4.3.0.0'
