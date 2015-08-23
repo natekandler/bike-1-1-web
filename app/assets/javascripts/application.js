@@ -15,5 +15,4 @@
 //= require tooltipster/jquery.tooltipster.js
 //= require vex/vex
 //= require vex/vex.dialog
-//= require underscore
 //= require_tree .
