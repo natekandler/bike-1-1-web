@@ -12,8 +12,6 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'bourbon'
 gem 'neat'
 gem 'active_model_serializers', '~> 0.9.3'
-gem 'react-rails', '~> 1.0'
-gem 'rails-backbone', '~> 1.2.0'
 
 #icons
 gem 'font-awesome-rails', '~> 4.3.0.0'
@@ -26,6 +24,9 @@ gem 'cancancan', '~> 1.10.1'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+#heroku
+gem 'rails_12factor', group: :production
 
 #server
 gem 'unicorn', '~> 4.9.0'
