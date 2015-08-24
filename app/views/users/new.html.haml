@@ -3,7 +3,7 @@
     .session-wrapper
       %h2
         Sign Up
-      = form_for @user do |form| 
+      = form_for @user, html: {id: "new-user-form"} do |form| 
         = render partial: '/users/form', object: form
         .submit-field
           = form.submit "Sign Up", class: "btn btn-dark-aqua"
