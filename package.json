@@ -1,0 +1,22 @@
+{
+  "name": "bike-one-one-web",
+  "version": "1.0.0",
+  "description": "\"bike one one web app\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natekandler/bike-1-1-web.git"
+  },
+  "author": "Nate Kandler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natekandler/bike-1-1-web/issues"
+  },
+  "homepage": "https://github.com/natekandler/bike-1-1-web",
+  "devDependencies": {
+    "webpack": "^1.2.0-beta6"
+  }
+}
