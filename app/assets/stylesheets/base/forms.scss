@@ -16,4 +16,23 @@ form{
   .btn-width{
     width: 70px;
   }
+  select{
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border: 1px solid #ccc;
+  }
+  i{
+    position: absolute;
+    bottom: 12px;
+    right: 7px;
+  }
+}
+.submit-field{
+  margin-top: 10px;
+}
+.select-dropdown{
+  position: relative;
 }

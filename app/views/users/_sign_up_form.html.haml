@@ -16,10 +16,17 @@
   .col-6
     .form-control.text-field
       = f.label :password
-      = f.text_field :password
+      = f.password_field :password
   .col-6
     .form-control.text-field
       = f.label :password_confirmation
-      = f.text_field :password_confirmation
+      = f.password_field :password_confirmation
+.row
+  .col-6
+    .form-control.select-dropdown
+      = f.label "I am a"
+      = f.select :role, [["rider", "rider"],["store", "responder"]]
+      %i.fa.fa-angle-down
+      
 
 
