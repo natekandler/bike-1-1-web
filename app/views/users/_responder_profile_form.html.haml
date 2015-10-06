@@ -1,0 +1,16 @@
+= f.fields_for :responder_profile do |responder_profile|
+  .row
+    .col-6
+      .form-control.text-field
+        = f.label :street_address
+        = f.text_field :street_address
+  .row
+    .col-6
+      .form-control.text-field
+        = f.label :zip
+        = f.text_field :zip
+  .row
+    .col-6
+      .form-control.text-field
+        = f.label :help_radius
+        = f.text_field :help_radius
