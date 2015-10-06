@@ -3,10 +3,10 @@
     .session-wrapper
       %h2
         Sign Up
-      = form_for @user, html: {id: "new-user-form"} do |form| 
-        = render partial: '/users/form', object: form
+      = form_for @user, html: {id: "new-user-form"} do |f| 
+        = render partial: '/users/sign_up_form', locals: {f: f}
         .submit-field
-          = form.submit "Sign Up", class: "btn btn-dark-aqua"
+          = f.submit "Sign Up", class: "btn btn-dark-aqua"
         .other-links
           %p
             already have an account?

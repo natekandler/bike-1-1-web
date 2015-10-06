@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20150603003138) do
   add_index "events", ["responder_id"], name: "index_events_on_responder_id", using: :btree
 
   create_table "store_profiles", force: true do |t|
+    t.string   "store_name"
     t.string   "street_address"
     t.string   "zip"
     t.float    "help_radius"

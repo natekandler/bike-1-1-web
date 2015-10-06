@@ -2,15 +2,20 @@
   .row
     .col-6
       .form-control.text-field
-        = f.label :street_address
-        = f.text_field :street_address
+        = responder_profile.label :store_name
+        = responder_profile.text_field :store_name
   .row
     .col-6
       .form-control.text-field
-        = f.label :zip
-        = f.text_field :zip
+        = responder_profile.label :street_address
+        = responder_profile.text_field :street_address
   .row
     .col-6
       .form-control.text-field
-        = f.label :help_radius
-        = f.text_field :help_radius
+        = responder_profile.label :zip
+        = responder_profile.text_field :zip
+  .row
+    .col-6
+      .form-control.text-field
+        = responder_profile.label :help_radius
+        = responder_profile.text_field :help_radius

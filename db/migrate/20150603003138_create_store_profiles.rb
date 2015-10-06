@@ -1,6 +1,7 @@
 class CreateStoreProfiles < ActiveRecord::Migration
   def change
     create_table :store_profiles do |t|
+      t.string :store_name
       t.string :street_address
       t.string :zip
       t.float :help_radius

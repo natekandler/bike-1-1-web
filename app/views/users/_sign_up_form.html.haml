@@ -1,5 +1,5 @@
 .row
-  .col-6
+  .col-12
     .form-control.text-field
       = f.label :email
       = f.text_field :email
@@ -8,10 +8,18 @@
     .form-control.text-field
       = f.label :first_name
       = f.text_field :first_name
-.row
   .col-6
     .form-control.text-field
       = f.label :last_name
       = f.text_field :last_name
+.row
+  .col-6
+    .form-control.text-field
+      = f.label :password
+      = f.text_field :password
+  .col-6
+    .form-control.text-field
+      = f.label :password_confirmation
+      = f.text_field :password_confirmation
 
 
