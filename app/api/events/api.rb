@@ -1,6 +1,5 @@
 module Events
   class API < Grape::API
-    version 'v1', using: :header
     format :json
     prefix :api
 
@@ -11,6 +10,13 @@ module Events
 
       def authenticate!
         error!('401 Unauthorized', 401) unless current_user
+      end
+    end
+
+   resource :events do
+      desc 'Return all events'
+      get :index do
+        Event.all.to_json
       end
     end
 

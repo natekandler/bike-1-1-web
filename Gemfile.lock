@@ -95,6 +95,8 @@ GEM
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
     hashie (3.4.2)
+    hashie-forbidden_attributes (0.1.1)
+      hashie (>= 3.0)
     hike (1.2.3)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
@@ -259,6 +261,7 @@ DEPENDENCIES
   font-awesome-rails (~> 4.3.0.0)
   grape (~> 0.13.0)
   haml-rails (~> 0.9.0)
+  hashie-forbidden_attributes
   jbuilder (~> 2.0)
   jquery-rails
   json_spec
