@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resources :users
 
+  mount Events::API => '/'
+
   namespace :admin do 
     resources :users
   end
