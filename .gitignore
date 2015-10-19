@@ -62,4 +62,6 @@ Temporary Items
 # Ignore application configuration
 /config/application.yml
 
-
+#Javascripts
+/webpack/node_modules
+/webpack/npm-debug.log
