@@ -25,6 +25,10 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+#api
+gem 'grape', '~> 0.13.0'
+gem 'hashie-forbidden_attributes'
+
 #heroku
 gem 'rails_12factor', group: :production
 

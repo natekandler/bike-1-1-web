@@ -1,0 +1,32 @@
+.row
+  .col-12
+    .form-control.text-field
+      = f.label :email
+      = f.text_field :email
+.row
+  .col-6
+    .form-control.text-field
+      = f.label :first_name
+      = f.text_field :first_name
+  .col-6
+    .form-control.text-field
+      = f.label :last_name
+      = f.text_field :last_name
+.row
+  .col-6
+    .form-control.text-field
+      = f.label :password
+      = f.password_field :password
+  .col-6
+    .form-control.text-field
+      = f.label :password_confirmation
+      = f.password_field :password_confirmation
+.row
+  .col-6
+    .form-control.select-dropdown
+      = f.label "I am a"
+      = f.select :role, [["rider", "rider"],["store", "responder"]]
+      %i.fa.fa-angle-down
+      
+
+

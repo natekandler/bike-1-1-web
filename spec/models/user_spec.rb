@@ -34,4 +34,11 @@ RSpec.describe User, :type => :model do
       expect(user.responses).to include event
     end
   end
+
+  it "should have a store profile" do
+    user = FactoryGirl.create(:user)
+    store_profile = FactoryGirl.create(:store_profile, user: user)
+
+    expect(user.store_profile).to eq store_profile
+  end
 end
