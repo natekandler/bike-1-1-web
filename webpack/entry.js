@@ -1,4 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-require("expose?GraphContainerFactory!././app/components/factories/graph_container_factory.jsx");
+require("expose?MapFactory!././app/components/factories/map_factory.jsx");
+
+

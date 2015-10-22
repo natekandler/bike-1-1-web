@@ -6,7 +6,7 @@
   .row
     .col-12
       .map-wrapper
-        #map-canvas
+      #map-canvas
 
 :javascript
   
@@ -25,9 +25,16 @@
         map: map,
         title: 'title'
     });
-  }
+  };
 
   $(window).load(function(){
     initializeMap();
   });
 
+  $(document).ready(function(){
+    ReactDOM.render(
+      MapFactory({
+      }),
+      $(".map-wrapper")[0]
+    )
+  });
